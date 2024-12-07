@@ -1,12 +1,15 @@
-import React from 'react'
-import { ItemType } from '../_lib/models/Item'
+import React from "react";
+import { ItemType } from "../_lib/models/Item";
+import Card from "./Card";
 
 type Props = {
-    item: ItemType
-}
+  item: ItemType;
+};
 
-export default function Item({item}: Props) {
+export default function Item({ item }: Props) {
   return (
-    <li>{item.name}</li>
-  )
+    <Card>
+      <li>{item.name}</li>
+    </Card>
+  );
 }

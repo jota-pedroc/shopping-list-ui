@@ -4,7 +4,7 @@ type Props = {children: React.ReactNode}
 
 export default function Card({children}: Props) {
   return (
-    <div>
+    <div className='rounded-md bg-slate-500 p-2'>
         {children}
     </div>
   )

@@ -8,7 +8,7 @@ type Props = {
 
 export default function ShoppingList({ items }: Props) {
   return (
-    <ul className="list-disc list-inside">
+    <ul className="list-disc list-inside grid grid-cols-1 gap-2">
       {items.map((item) => (
         <Item item={item} key={item.name} />
       ))}
