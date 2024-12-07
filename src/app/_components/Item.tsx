@@ -7,6 +7,6 @@ type Props = {
 
 export default function Item({item}: Props) {
   return (
-    <ul>{item.name}</ul>
+    <li>{item.name}</li>
   )
 }
