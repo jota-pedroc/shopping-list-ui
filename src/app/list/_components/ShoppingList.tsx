@@ -1,15 +1,17 @@
-import Item from '@/app/_components/Item'
-import { ItemType } from '@/app/_lib/models/Item'
-import React from 'react'
+import Item from "@/app/_components/Item";
+import { ItemType } from "@/app/_lib/models/Item";
+import React from "react";
 
 type Props = {
-    items: ItemType[]
-}
+  items: ItemType[];
+};
 
-export default function ShoppingList({items}: Props) {
+export default function ShoppingList({ items }: Props) {
   return (
-    <ul>
-        {items.map(item => (<Item item={item} key={item.name}/>)) }
+    <ul className="list-disc list-inside">
+      {items.map((item) => (
+        <Item item={item} key={item.name} />
+      ))}
     </ul>
-  )
+  );
 }
