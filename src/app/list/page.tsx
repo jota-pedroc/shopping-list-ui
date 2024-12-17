@@ -10,7 +10,7 @@ export default async function ShoppingListPage({}: Props) {
 
   return (
     <>
-      <h2 className="capitalize text-2xl">my shopping list</h2>
+      <h1 className="capitalize text-2xl mb-2">my shopping list</h1>
       <ShoppingList items={items} />
     </>
   );
